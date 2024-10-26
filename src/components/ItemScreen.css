@@ -1,0 +1,68 @@
+/* src/components/ItemScreen.css */
+.item-screen {
+    padding-top: 70px; /* Отступ для фиксированного заголовка */
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px); /* Высота экрана минус отступ для заголовка */
+    padding: 20px;
+}
+
+/* Изображение одежды */
+.item-image {
+    width: 200px;
+    height: 200px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+/* Секция заголовков */
+.item-section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Блок выбора цвета */
+.item-color-selection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item-colors {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item-color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: #fff;
+}
+
+.item-color.rainbow {
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/* Блок выбора типа и температуры */
+.item-type-selection, .item-temperature-selection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item-select {
+    width: 150px;
+    padding: 5px;
+    font-size: 16px;
+}

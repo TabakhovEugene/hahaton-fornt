@@ -1,0 +1,42 @@
+/* src/components/UserScreen.css */
+.user-screen {
+    padding-top: 70px; /* Отступ для фиксированного заголовка */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px); /* Высота экрана с учетом заголовка */
+  }
+  
+  .user-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Отступ между иконкой пользователя и деталями */
+  }
+  
+  .user-icon {
+    font-size: 50px; /* Размер иконки пользователя */
+  }
+  
+  .user-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .username {
+    font-size: 20px; /* Размер шрифта для имени пользователя */
+    margin-bottom: 10px; /* Отступ между именем пользователя и кнопкой */
+  }
+  
+  .logout-button {
+    background-color: #ff4c4c; /* Цвет фона для кнопки выхода */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Скругление углов */
+    cursor: pointer; /* Указатель при наведении */
+  }
+  
+  .logout-button:hover {
+    background-color: #ff0000; /* Цвет фона кнопки при наведении */
+  }
+  

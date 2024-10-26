@@ -1,0 +1,49 @@
+/* src/components/GenerationsScreen.css */
+.generations-screen {
+  padding-top: 70px; /* Отступ для фиксированного заголовка */
+}
+
+.generations-content {
+  padding: 20px;
+}
+
+.generations-category {
+  margin-bottom: 40px;
+}
+
+.generations-category-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3399ff;
+  margin-bottom: 10px;
+}
+
+.generations-items-row {
+  display: flex;
+  overflow-x: auto; /* Включаем горизонтальную прокрутку */
+  gap: 10px;
+  padding: 10px 0;
+  -webkit-overflow-scrolling: touch; /* Для плавного скроллинга на мобильных устройствах */
+}
+
+.generations-item {
+  width: 100px;
+  height: 100px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; /* Предотвращаем сжатие блоков */
+}
+
+/* Стили для фиксированного заголовка */
+.generations-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; /* Фон заголовка, чтобы он перекрывал содержимое */
+}

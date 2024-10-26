@@ -1,0 +1,57 @@
+/* src/components/GalleryScreen.css */
+.gallery-screen {
+  padding-top: 70px; /* Отступ для фиксированного заголовка */
+}
+
+.gallery-content {
+  padding: 20px;
+}
+
+.gallery-category {
+  margin-bottom: 40px; /* Отступ между категориями */
+}
+
+.gallery-category-header {
+  display: flex;
+  align-items: center; /* Центрируем элементы по вертикали */
+  justify-content: space-between; /* Распределяем элементы по краям */
+}
+
+.gallery-category-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3399ff;
+  margin-bottom: 10px;
+}
+
+.gallery-add-button {
+  background-color: #3399ff; /* Цвет фона кнопки */
+  color: white; /* Цвет текста */
+  border: none; /* Убираем границу */
+  border-radius: 4px; /* Скругление углов */
+  padding: 5px 10px; /* Отступы внутри кнопки */
+  cursor: pointer; /* Курсор в виде указателя */
+}
+
+.gallery-add-button:hover {
+  background-color: #2979ff; /* Цвет фона при наведении */
+}
+
+.gallery-items-row {
+  display: flex;
+  overflow-x: auto; /* Включаем горизонтальную прокрутку */
+  padding: 10px 0; /* Отступ сверху и снизу */
+}
+
+.gallery-item {
+  width: 100px; /* Ширина каждого блока */
+  height: 100px; /* Высота каждого блока */
+  background-color: #e0e0e0; /* Цвет фона блоков */
+  border: 1px solid #ccc; /* Граница блоков */
+  border-radius: 8px; /* Скругление углов */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px; /* Отступ между блоками */
+  flex-shrink: 0; /* Предотвращаем сжатие блоков */
+}
