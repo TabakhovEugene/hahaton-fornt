@@ -1,0 +1,52 @@
+.lobby {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%; /* Убедитесь, что установлен 100% */
+  max-width: 100%; /* Запретите превышение 100% ширины */
+    position: relative; /* Ensure positioning context for absolute children */
+  }
+  
+
+  
+  .lobby-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the buttons vertically */
+    gap: 20px;
+    height: calc(100vh - 60px); /* Adjust for header height */
+    margin-top: 60px; /* Push down to account for the fixed header */
+    width: 100%; /* Убедитесь, что установлен 100% */
+  max-width: 100%; /* Запретите превышение 100% ширины */
+  }
+  
+  .lobby-button,
+  .today-look-button {
+    width: 100%; /* Full width */
+    padding: 15px 20px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .lobby-button {
+    background-color: #3399ff; /* Button color */
+  }
+  
+  .lobby-button:hover {
+    background-color: #66b3ff; /* Hover effect */
+  }
+  
+  .today-look-button {
+    background-color: #28a745; /* Button color */
+    margin-top: 30px; /* Space from the other buttons */
+  }
+  
+  .today-look-button:hover {
+    background-color: #34d058; /* Hover effect */
+  }
+  

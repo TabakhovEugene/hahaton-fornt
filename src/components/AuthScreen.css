@@ -1,0 +1,53 @@
+/* src/components/AuthScreen.css */
+.auth-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* Высота заголовка */
+    background-color: white; /* Цвет фона заголовка */
+    z-index: 10; /* Чтобы заголовок был выше остальных элементов */
+  }
+  
+  .auth-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Центрирует блоки вертикально */
+    height: calc(100vh - 60px); /* Учитываем высоту заголовка */
+    margin-top: 60px; /* Отступ сверху, чтобы содержимое начиналось под заголовком */
+  }
+  
+  .auth-input {
+    width: 80%; /* Ширина полей ввода */
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px; /* Отступ между полями ввода */
+    border: 1px solid #ccc; /* Граница поля ввода */
+    border-radius: 8px; /* Закругление углов */
+  }
+  
+  .login-button {
+    width: 80%; /* Ширина кнопки */
+    padding: 15px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #3399ff; /* Цвет кнопки */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #66b3ff; /* Цвет при наведении */
+  }
+  

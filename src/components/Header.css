@@ -1,0 +1,61 @@
+/* src/components/Header.css */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3399ff;
+  }
+  
+  .header-menu {
+    position: relative;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    font-size: 24px; /* Уменьшите размер, если нужно */
+    cursor: pointer;
+    color: #3399ff;
+    padding: 10px; /* Добавьте немного отступа для удобства */
+    margin-left: 10px; /* Отступ слева для большей видимости */
+  }
+  
+  .dropdown-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 1001;
+  }
+  
+  .dropdown-menu a {
+    font-size: 20px;
+    color: #3399ff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu a:hover {
+    text-decoration: underline;
+  }
+  
