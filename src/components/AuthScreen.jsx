@@ -1,17 +1,48 @@
 // src/components/AuthScreen.jsx
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Импортируйте useNavigate
+import { useNavigate } from 'react-router-dom';
 import Header from './Header';
 import './AuthScreen.css';
 
 function AuthScreen() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // Инициализация navigate
+  const navigate = useNavigate();
+
+  const logout = () => {
+  localStorage.removeItem('accessToken');
+  localStorage.removeItem('refreshToken');
+  navigate('/');
+};
 
   const handleLogin = () => {
-    // Здесь может быть логика проверки логина и пароля
-    navigate('/lobby'); // Переход на Lobby при успешном входе
+    const formData = new FormData();
+    formData.append('username', username);
+    formData.append('password', password);
+
+    fetch('http://127.0.0.1:8000/login/', {
+      method: 'POST',
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.access && data.refresh) {
+          // Сохраняем токены в localStorage
+          localStorage.setItem('accessToken', data.access);
+          localStorage.setItem('refreshToken', data.refresh);
+          // Перенаправляем на /lobby
+          navigate('/lobby');
+        } else {
+          console.log('Ошибка входа: ' + data.message);
+          // Выполняем выход в случае ошибки
+          logout();
+        }
+      })
+      .catch((error) => {
+        console.error('Ошибка:', error);
+        // Выполняем выход при возникновении ошибки
+        logout();
+      });
   };
 
   return (

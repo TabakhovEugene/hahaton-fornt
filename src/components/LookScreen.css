@@ -1,34 +1,53 @@
 /* src/components/LookScreen.css */
 .look-screen {
-    padding-top: 70px; /* Отступ для фиксированного заголовка */
+    padding-top: 70px;
+    /* Отступ для фиксированного заголовка */
 }
 
 .look-content {
     padding: 20px;
-    text-align: center; /* Центрируем содержимое */
+    text-align: center;
+    /* Центрируем содержимое */
 }
 
 .look-title {
     font-size: 24px;
     font-weight: bold;
     color: #3399ff;
-    margin-bottom: 20px; /* Отступ под заголовком */
+    margin-bottom: 20px;
+    /* Отступ под заголовком */
 }
 
 .look-items-column {
     display: flex;
-    flex-direction: column; /* Вертикальное расположение элементов */
-    align-items: center; /* Центрируем элементы */
-    gap: 20px; /* Отступ между блоками */
+    flex-direction: column;
+    /* Вертикальное расположение элементов */
+    align-items: center;
+    /* Центрируем элементы */
+    gap: 20px;
+    /* Отступ между блоками */
 }
 
 .look-item {
-    width: 150px; /* Ширина каждого блока */
-    height: 150px; /* Высота каждого блока */
-    background-color: #e0e0e0; /* Цвет фона блоков */
-    border: 1px solid #ccc; /* Граница блоков */
-    border-radius: 8px; /* Скругление углов */
+    width: 150px;
+    /* Ширина каждого блока */
+    height: 150px;
+    /* Высота каждого блока */
+    background-color: #e0e0e0;
+    /* Цвет фона блоков */
+    border: 1px solid #ccc;
+    /* Граница блоков */
+    border-radius: 8px;
+    /* Скругление углов */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.look-item-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    /* Скругление углов изображения */
 }

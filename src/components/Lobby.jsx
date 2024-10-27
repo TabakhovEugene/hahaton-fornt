@@ -6,13 +6,16 @@ import { useNavigate } from 'react-router-dom'; // Импортируйте useN
 
 function Lobby() {
   const navigate = useNavigate(); // Инициализация navigate
+
+  
+
   return (
     <div className="lobby">
       <Header />
       <div className="lobby-content">
         <button className="lobby-button" onClick={()=>{navigate('/gallery');}}>Список одежды</button>
         <button className="lobby-button" onClick={()=>{navigate('/look');}}>Сгенерировать сет одежды</button>
-        <button className="today-look-button"  onClick={()=>{navigate('/look');}}>Ваш лук на сегодня</button>
+        <button className="today-look-button"  onClick={()=>{navigate('/look');}}>Ваш образ на сегодня</button>
       </div>
     </div>
   );
