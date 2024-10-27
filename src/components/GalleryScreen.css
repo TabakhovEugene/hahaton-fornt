@@ -14,7 +14,7 @@
 .gallery-category-header {
   display: flex;
   align-items: center; /* Центрируем элементы по вертикали */
-  justify-content: space-between; /* Распределяем элементы по краям */
+  /* justify-content: space-between; */
 }
 
 .gallery-category-title {
@@ -31,6 +31,8 @@
   border-radius: 4px; /* Скругление углов */
   padding: 5px 10px; /* Отступы внутри кнопки */
   cursor: pointer; /* Курсор в виде указателя */
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .gallery-add-button:hover {

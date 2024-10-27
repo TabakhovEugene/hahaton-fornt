@@ -7,7 +7,7 @@ import GalleryScreen from './components/GalleryScreen';
 import GenerationsScreen from './components/GenerationsScreen';
 import LookScreen from './components/LookScreen';
 import ProfileScreen from './components/ProfileScreen';
-import ItemScreen from './components/ItemScreen'; 
+import ItemEditScreen from './components/ItemEditScreen'; 
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Route path="/generations" element={<GenerationsScreen />} />
         <Route path="/look" element={<LookScreen />} />
         <Route path="/user" element={<ProfileScreen />} />
-        <Route path="/item" element={<ItemScreen />} /> 
+        <Route path="/item" element={<ItemEditScreen />} /> 
       </Routes>
     </Router>
   );

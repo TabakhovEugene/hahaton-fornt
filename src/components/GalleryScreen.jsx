@@ -62,7 +62,7 @@ const GalleryScreen = () => {
           <div key={index} className="gallery-category">
             <div className="gallery-category-header">
               <h2 className="gallery-category-title">{category.title}</h2>
-              <button className="gallery-add-button" onClick={handleAddItem}>+</button>
+              <div className="gallery-add-button" onClick={handleAddItem}>+</div>
             </div>
             <div className="gallery-items-row">
               {category.items.map((item, itemIndex) => (

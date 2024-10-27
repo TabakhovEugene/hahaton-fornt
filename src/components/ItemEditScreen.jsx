@@ -1,9 +1,9 @@
-// src/components/ItemScreen.jsx
+// src/components/ItemEditScreen.jsx
 import React from 'react';
 import Header from './Header';
-import './ItemScreen.css';
+import './ItemEditScreen.css';
 
-const ItemScreen = () => {
+const ItemEditScreen = () => {
   return (
     <div className="item-screen">
       <Header />
@@ -50,4 +50,4 @@ const ItemScreen = () => {
   );
 };
 
-export default ItemScreen;
+export default ItemEditScreen;

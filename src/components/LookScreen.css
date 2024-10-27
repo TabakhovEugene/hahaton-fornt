@@ -1,34 +1,39 @@
 /* src/components/LookScreen.css */
 .look-screen {
-    padding-top: 70px; /* Отступ для фиксированного заголовка */
-}
-
-.look-content {
+    padding-top: 70px;
+  }
+  
+  .look-content {
     padding: 20px;
-    text-align: center; /* Центрируем содержимое */
-}
-
-.look-title {
+    text-align: center;
+  }
+  
+  .look-title {
     font-size: 24px;
     font-weight: bold;
     color: #3399ff;
-    margin-bottom: 20px; /* Отступ под заголовком */
-}
-
-.look-items-column {
+    margin-bottom: 20px;
+  }
+  
+  .look-items-column {
     display: flex;
-    flex-direction: column; /* Вертикальное расположение элементов */
-    align-items: center; /* Центрируем элементы */
-    gap: 20px; /* Отступ между блоками */
-}
-
-.look-item {
-    width: 150px; /* Ширина каждого блока */
-    height: 150px; /* Высота каждого блока */
-    background-color: #e0e0e0; /* Цвет фона блоков */
-    border: 1px solid #ccc; /* Граница блоков */
-    border-radius: 8px; /* Скругление углов */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .look-item {
+    width: 150px;
+    height: 150px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    cursor: pointer;
+  }
+  
+
+  
+ 

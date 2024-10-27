@@ -47,7 +47,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-logo" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
-        Логотип
+        DailyDress
       </div>
       <div className="header-menu">
         <button className="menu-button" onClick={toggleMenu}>

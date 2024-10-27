@@ -1,0 +1,79 @@
+/* src/components/EditLookWindow.css */
+.edit-look-window-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .edit-look-window-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .edit-look-window-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .edit-look-window-body {
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .edit-look-window-scroll-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; /* Горизонтальная прокрутка */
+    padding-bottom: 10px;
+  }
+  
+  .edit-look-window-scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .edit-look-window-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .edit-look-window-close-button {
+    background: #3399ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-look-window-close-button:hover {
+    background: #287bcb;
+  }
+  
+  .edit-look-window-option {
+    min-width: 80px; /* Минимальная ширина для каждого элемента */
+    height: 80px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .edit-look-window-option:hover {
+    background-color: #d0d0d0;
+  }
+  
